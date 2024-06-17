@@ -1,11 +1,12 @@
 package ru.netology.radio;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TestRadio {
 
     @Test
-    public void shouleSedNumberRadiostation(){
+    public void shouleSedNumberRadiostation() {
         Radio cond = new Radio();
 
         cond.setNumberStation(9);
@@ -17,7 +18,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleNotSetNumberRadiostationAboveMax(){
+    public void shouleNotSetNumberRadiostationAboveMax() {
         Radio cond = new Radio();
 
         cond.setNumberStation(10);
@@ -29,7 +30,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleNumberStationUp1(){
+    public void shouleNumberStationUp1() {
         Radio cond = new Radio();
         cond.setNumberStation(9);
 
@@ -42,7 +43,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleNumberStationDown1(){
+    public void shouleNumberStationDown1() {
         Radio cond = new Radio();
         cond.setNumberStation(0);
 
@@ -55,7 +56,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleIncreaseVolume(){
+    public void shouleIncreaseVolume() {
         Radio cond = new Radio();
         cond.setCurrentVolume(99);
 
@@ -68,7 +69,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleReduceVolume(){
+    public void shouleReduceVolume() {
         Radio cond = new Radio();
         cond.setCurrentVolume(1);
 
@@ -81,7 +82,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleNotSetVolumeAboveMax(){
+    public void shouleNotSetVolumeAboveMax() {
         Radio cond = new Radio();
 
         cond.setCurrentVolume(101);
@@ -93,7 +94,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleNotSetVolumeAboveMin(){
+    public void shouleNotSetVolumeAboveMin() {
         Radio cond = new Radio();
 
         cond.setCurrentVolume(-1);
@@ -105,7 +106,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleIncreaseVolumeNotMax(){
+    public void shouleIncreaseVolumeNotMax() {
         Radio cond = new Radio();
         cond.setCurrentVolume(100);
 
@@ -118,7 +119,7 @@ public class TestRadio {
     }
 
     @Test
-    public void shouleReduceVolumeNotMin(){
+    public void shouleReduceVolumeNotMin() {
         Radio cond = new Radio();
         cond.setCurrentVolume(0);
 
